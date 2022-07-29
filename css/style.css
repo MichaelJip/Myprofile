@@ -1,0 +1,312 @@
+
+html,
+body {
+    margin: 0;
+}
+
+h2{
+    font-size: 42px;
+}
+
+body {
+    background-color: #cbd5e0;
+}
+
+section {
+    min-height: 100vh;
+    width: 100%;
+}
+
+section:nth-child(2n) {
+    background-color: #1e2749;
+}
+
+/* First Screen */
+
+.image-size{
+    height: 50px;
+    width: 50px;
+    transition: transform .2s;
+}
+
+.container {
+    padding: 300px;
+    margin-left: 200px;
+}
+
+.container :is(p) {
+    font-size: 20px;
+    color: #979797;
+}
+
+.container :is(h2) {
+    color: #ffffff;
+}
+
+/* First Screen */
+
+/* Second Screen */
+
+.container-2 {
+    display: flex;
+}
+
+.contain-aboutMe{
+    margin: 20px;
+    margin-left: 10%;
+}
+
+.contain-aboutMe :is(h2) {
+    margin-top: 5%;
+    margin-left: 25%;
+    font-size: 32px;
+}
+
+.contain-aboutMe :is(p) {
+    
+    font-size: 28px;
+    width: 70%;
+}
+
+.image-profile {
+    border: 10px solid #ddd;
+    border-radius: 4px;
+    height: 600px;
+    width: 450px;
+    margin-left: 150px;
+    margin-top: 50px;
+}
+
+/* Second Screen */
+
+/* Third Screen */
+
+.container-3 {
+    margin: 5%;
+}
+
+.container-3 :is(p) {
+    color: #fff;
+}
+
+.container-3 :is(h2) {
+    color: #fff;
+}
+
+.myTech {
+    display: flex; 
+}
+
+.myTech-distance {
+    margin-left: 2%;
+}
+
+.language-img {
+    height: 50px;
+    width: 50p;
+    transition: transform .2s;
+}
+
+
+summary {
+    border: 4px solid transparent;
+    outline: none;
+    padding: 1rem;
+    display: block;
+    color: #a0aec0;
+    padding-left: 2.2rem;
+    position: relative;
+    cursor: pointer;
+    font-weight: bold;
+    /* font-size: 26px; */
+}
+
+details {
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    padding: .5em .5em 0;
+    width: 25%;
+    background-color: #25315b;
+}
+
+details summary::-webkit-details-marker {
+    display: none;
+}
+
+details[open]>summary:before {
+    transform: rotate(90deg);
+}
+
+summary:before {
+    content: '';
+    border-width: .4rem;
+    border-style: solid;
+    border-color: transparent transparent transparent #fff;
+    position: absolute;
+    top: 1.3rem;
+    left: 1rem;
+    transform: rotate(0);
+    transform-origin: .2rem 50%;
+    transition: .25s transform ease;
+}
+
+.content{
+    margin: 0;
+}
+
+.experience {
+    margin-top: 10%;
+}
+
+/* Third Screen */
+
+/* Fourth Screen */
+
+.container-4 {
+    margin: 5%;
+
+}
+
+.container-4 :is(p) {
+    color: #fff;
+}
+
+.container-4 :is(h2) {
+    color: #fff;
+}
+
+.card-holder{
+    justify-content: center;
+    align-items: center;
+}
+
+.img-logo{
+    height: 120px;
+    width: 120px;
+    
+}
+
+.card {
+    width: 100%;
+    height: 400px;
+    max-width: 300px;
+    border-radius: 8px;
+    background: #fff;
+    backdrop-filter: blur(2px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-right-color: rgba(255, 255, 255, 0.1);
+    border-bottom-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.05);
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card,
+.card * {
+    box-sizing: border-box;
+    transform: 400ms;
+}
+
+.card-img img {
+    margin-left: 25%;
+    display: block;
+    width: 50%;
+    height: auto;
+}
+
+.card-title {
+    text-align: center;
+    margin-top: 8px;
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.card-content {
+    position: absolute;
+    right: 32px;
+    bottom: 3px;
+    left: 32px;
+    /* color: blue; */
+    font-size: 0.80rem;
+    opacity: 0;
+}
+
+.card-content :is(p){
+    color: #000;
+}
+
+.card:hover .card-img{
+    transform: translateY(-60px);
+}
+
+.card:hover .card-img img {
+    transform: translate(-16px, -42px) rotate(-16deg) scale(1.4);
+}
+
+.card:hover .card-content {
+    opacity: 1;
+}
+
+/* Fourth Screen */
+
+/* Download image Size */
+
+.img-download {
+    height: 30px;
+    width: 30px;
+    transition: transform .2s;
+}
+/* Download image Size */
+
+/* Button To Top */
+
+.back-to-top {
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    padding: 0.5rem;
+    border: none;
+    cursor: pointer;
+    opacity: 100%;
+    transition: opacity 0.5s;
+}
+
+.back-to-top:hover {
+    opacity: 100%;
+}
+
+.hidden {
+    opacity: 0%;
+}
+
+/* Button To Top */
+
+/* Reveal */
+
+.reveal {
+    position: relative;
+    transform: translateY(144px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Reveal */
+
+/* Zoom Hover */
+
+.zoom:hover{
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+/* Zoom Hover */
